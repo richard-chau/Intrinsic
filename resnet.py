@@ -19,4 +19,4 @@ class ResNet(nn.Module):
         resout = self.res_o16(inres)
         out1 = self.last1(resout)
         out2 = self.last2(resout)
-        return F.upsample_bilinear(out1, x,size()[2:]), F.upsample_bilinear(out2, x,size()[2:])
+        return F.upsample_bilinear(out1, x.size()[2:]), F.upsample_bilinear(out2, x.size()[2:])
