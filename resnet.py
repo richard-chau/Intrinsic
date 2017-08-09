@@ -8,7 +8,7 @@ class ResNet(nn.Module):
             nn.Conv2d(256, 3, 3, padding=1, bias=False),
             nn.ReLU(inplace=True),
             )
-        self.last2 = nn.Conv2d(256, 16, 3, padding=1, bias=False) nn.Sequential(
+        self.last2 =  nn.Sequential(
             nn.Conv2d(256, 3, 3, padding=1, bias=False),
             nn.ReLU(inplace=True),
             )
